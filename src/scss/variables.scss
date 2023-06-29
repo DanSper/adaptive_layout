@@ -1,0 +1,19 @@
+$marg-top-main-block: 175px;
+$widthBlock: 70vw;
+$lightBrown: #B59571;
+$grey: #808080;
+$darkGrey: #5B5B5B;
+$lightGrey: #5b5b5bc2;
+$darkGreen: #006400;
+
+@mixin font ($weight, $size) {
+	font-weight: $weight;
+	font-size: $size;
+}
+
+@mixin flex ($display, $direction, $justify-content, $align-items) {
+	display: $display;
+	flex-direction: $direction;
+	justify-content: $justify-content;
+	align-items: $align-items;
+}
