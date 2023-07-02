@@ -1,17 +1,17 @@
 @import "normalize.scss";
 @import "scaffolding.scss";
-@import "style1.scss";
+
 
 
 @font-face {
   font-family: Roboto;
-  src: url(../asserts/fonts/roboto_regular/roboto_regular.woff2) format("woff2"), url(../asserts/fonts/roboto_regular/roboto_regular.woff) format("woff");
+  src: url(../fonts/roboto_regular.woff2) format("woff2"), url(../fonts/roboto_regular.woff) format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 * {
-	font-family: Roboto, Calibri;
+	font-family: Roboto;
 }
 
 body {
@@ -46,7 +46,7 @@ body {
 	padding: 20px;
 }
 
-.menu__item-- {
+.menu__item--white {
 	color: white;
 }
 
@@ -77,7 +77,6 @@ body {
 	margin-top: 98px;
 	&__title {
 		font-weight: 700;
-		margin: 20px 0;
 		border-bottom: 3px solid blue;
     margin: 20px auto;
 		padding-bottom: 16px;
@@ -162,29 +161,31 @@ body {
 .btn--photo2:focus ~ .gallery__main-photo  { 
 	background: url("../img/gallery_photo_2.jpg") no-repeat;
 	background-size: contain;
-	width: 376px;
+	width: 345px;
 	height: 332px;
+	margin: auto;
 }
 
 .btn--photo3:focus ~ .gallery__main-photo  { 
 	background: url("../img/gallery_photo_3.jpg") no-repeat;
 	background-size: contain;
-	width: 376px;
+	width: 345px;
 	height: 332px;
 }
 
 .btn--photo4:focus ~ .gallery__main-photo  { 
 	background: url("../img/gallery_photo_4.jpg") no-repeat;
 	background-size: contain;
-	width: 376px;
+	width: 345px;
 	height: 332px;
 }
 
 .gallery__main-photo {
 	background: url("../img/gallery_photo_1.jpg") no-repeat;
 	background-size: contain;
-	width: 376px;
+	width: 345px;
 	height: 332px;
+	margin: auto;
 }
 
 .gallery__photo {

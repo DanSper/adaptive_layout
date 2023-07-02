@@ -18,13 +18,14 @@
 			html: `${srcFolder}/*.html`,
 			images: `${srcFolder}/asserts/img/**/*.{jpg,jpeg,png,gif}`,
 			svg: `${srcFolder}/asserts/img/**/*.svg`,
+			fonts: `${srcFolder}/asserts/fonts/**/*.{woff,woff2}`,
 			files: `${srcFolder}/files/**/*.*`
-			// fonts: `${srcFolder}/asserts/fonts/**/*.{woff2,woff}`,
 		},
 		watch: {
 			scss: `${srcFolder}/scss/**/*.scss`,
 			html: `${srcFolder}/**/*.html`,
 			images: `${srcFolder}/asserts/img/**/*.{jpg,jpeg,png,gif,svg}`,
+			fonts: `${srcFolder}/asserts/fonts/**/*.{woff,woff2}`,
 			files: `${srcFolder}/files/**/*.*`
 		},
 		clean: buildFolder,
