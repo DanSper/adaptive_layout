@@ -23,21 +23,14 @@
 					<li class="menu__item"><a href="#"><span class="menu__item--white">Контакты</span></a></li>				
 				</ul>				
 			</nav>
-		</header>
-		<!-- Сделать все классы по бэм -->
-		<!-- Сделать шрифт и стили как в макете -->
-		<!-- Галерею сделать так, чтобы при нажатии на картинку она появлялась на место большой картинки по умолчанию -->
-		<!-- В новостях сделать справа от заголовка "итоги" слово "подробнее" со стрелочкой вниз и вверх -->
-		<!-- Контакты перенести на саму карту в правом верхнем углу            yes --> 
-		<!-- Фразу "мы в соц сетях" с логотипами перенести под карту           yes -->
+		</header>		
 		<!-- Нижнее меню в футере открывающиеся список сделать справа от основного списка -->
-		<!-- Убрать все br и сделать ширину текста больше                      yes -->
 		<main>
 			<h1 class="title">вместе под парусом</h1>
 			<img src="../img/main_photo.jpg" class="main-img" alt="">
 			<div class="welcome-block">		
 				<p class="welcome-block__date">20 октября - 19 апреля</p>
-				<h2 class="welcome-block__title">Стань частью команды</h2>
+				<h2 class="welcome-block__title title-block">Стань частью команды</h2>
 				<p>Если вы давно хотели попробовать себя в яхтинге –
 				сейчас самое лучшее время! Мы набираем команду
 				будущих шкиперов. За 6 вы станете настоящим 
@@ -45,7 +38,7 @@
 				самостоятельно выйти в море!</p>
 				<img src="../img/photo_2.png" class="welcome-block__img" alt="">		
 				<p class="welcome-block__date">16 июля - 23 июля</p>
-				<h2 class="welcome-block__title">Рожденные в воде</h2>
+				<h2 class="welcome-block__title title-block">Рожденные в воде</h2>
 				<p>Подарите детям настоящее приключение! День с 
 				морскими пиратами на корабле – это лучшая
 				команда, веселые аниматоры, игры, соревнования, 
@@ -53,7 +46,7 @@
 				<img src="../img/photo_3.png" class="welcome-block__img" alt="">				
 			</div>
 			<div class="types-of-yachts">
-				<h2 class="types-of-yachts__title">Аренда яхты</h2>
+				<h2 class="types-of-yachts__title title-block">Аренда яхты</h2>
 				<div class="types-of-yachts__card card">
 					<img class="card__img" src="../img/photo_yacht_1.jpg" alt="">
 					<div class="card__info info">
@@ -156,6 +149,7 @@
 				</div>
 			</div>		
 			<div class="gallery">
+				<h2 class="gallery__title title-block">Галерея</h2>
 				<button class="gallery__btn btn--photo2"><img class="gallery__photo" src="../img/gallery_photo_2.jpg" alt=""></button>
 				<button class="gallery__btn btn--photo3"><img class="gallery__photo" src="../img/gallery_photo_3.jpg" alt=""></button>
 				<button class="gallery__btn btn--photo4"><img class="gallery__photo" src="../img/gallery_photo_4.jpg" alt=""></button>
@@ -164,7 +158,7 @@
 				</div>
 			</div>	
 			<div class="news">
-				<h2 class="news__title">Новости</h2>
+				<h2 class="news__title title-block">Новости</h2>
 				<figure>
 					<img src="../img/photo_news.jpg" class="news__img" alt="">
 					<figcaption class="news__figcaption">Победитель регаты шкипер Иван Кулешов</figcaption>
@@ -204,18 +198,21 @@
 					<label for="read-more" class="read-more-btn"></label>
 				</div>
 			</div>		
-			<div style="position:relative;overflow:hidden;">
+			<div class="wrap-contacts">				
+				<div>
+					<!-- <a href="https://yandex.ru/maps/10995/krasnodar-krai/?utm_medium=mapframe&utm_source=maps" style="color:#163152;font-size:15px;position:relative;top:46px;z-index:1;"> -->
+					<!-- Краснодарский край</a> -->
+					<a href="https://yandex.ru/maps/10995/krasnodar-krai/house/golubaya_ulitsa_15/Z0AYfwNkTEEGQFppfXhxdXRmYw==/?ll=39.931788%2C43.413012&utm_medium=mapframe&utm_source=maps&z=17" 
+					style="color:#163152;font-size:15px;position:relative;top:73px;z-index:1;">Краснодарский край <br>Голубая улица, 15 на карте Краснодарского края</a>
+					<iframe class="map" src="https://yandex.ru/map-widget/v1/?ll=39.931788%2C43.413012&mode=whatshere&whatshere%5Bpoint%5D=39.944541%2C43.404857&whatshere%5Bzoom%5D=17&z=17"
+					frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+				</div>
 				<div class="contacts">
 					<h2 class="contacts__title">Контакты</h2>
-					<p class="contacts__info">Адрес: г. Сочи, ул. Бзугу, 9</p>
-					<p class="contacts__info">Телефон: 8 (622) 62-05-63</p>
-					<p class="contacts__info">E-mail: yachtclub-sochi@mail.ru</p>
+					<p class="contacts__info"><span class="contacts__info--weight">Адрес:</span> <a href="https://yandex.ru/maps/239/sochi/house/ulitsa_bzugu_3a/Z0AYcQJhTUICQFppfXl3dXxrZw==/?ll=39.751475%2C43.564083&z=16" target="_blank">г. Сочи, ул. Бзугу, 9</a></p>
+					<p class="contacts__info"><span class="contacts__info--weight">Телефон:</span> <a href="#">8 (622) 62-05-63</a></p>
+					<p class="contacts__info"><span class="contacts__info--weight">E-mail:</span> <a href="#">yachtclub-sochi@mail.ru</a></p>
 				</div>
-				<a href="https://yandex.ru/maps/10995/krasnodar-krai/?utm_medium=mapframe&utm_source=maps" style="color:#163152;font-size:15px;position:relative;top:46px;z-index:1;">
-				Краснодарский край</a><a href="https://yandex.ru/maps/10995/krasnodar-krai/house/golubaya_ulitsa_15/Z0AYfwNkTEEGQFppfXhxdXRmYw==/?ll=39.931788%2C43.413012&utm_medium=mapframe&utm_source=maps&z=17" 
-				style="color:#163152;font-size:15px;position:relative;top:73px;z-index:1;">Голубая улица, 15 на карте Краснодарского края — Яндекс Карты</a>
-				<iframe src="https://yandex.ru/map-widget/v1/?ll=39.931788%2C43.413012&mode=whatshere&whatshere%5Bpoint%5D=39.944541%2C43.404857&whatshere%5Bzoom%5D=17&z=17"
-				width="100%" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>			
 			</div>
 			<div class="social-networks">
 				<p class="social-networks__text">Мы в социальных сетях:</p>

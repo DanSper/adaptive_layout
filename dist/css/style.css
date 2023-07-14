@@ -375,6 +375,10 @@ body {
   width: 100%;
 }
 
+a {
+  color: inherit;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -385,14 +389,30 @@ body {
   width: 79px;
 }
 
+@media (min-width: 768px) {
+  .header__logo {
+    width: 119px;
+  }
+}
 .header__profile {
   width: 100px;
 }
 
+@media (min-width: 768px) {
+  .header__profile {
+    width: 129px;
+    margin-left: 325px;
+  }
+}
 .menu__icon {
   width: 100px;
 }
 
+@media (min-width: 768px) {
+  .menu__icon {
+    width: 130px;
+  }
+}
 .menu__list {
   display: none;
   position: fixed;
@@ -425,6 +445,13 @@ body {
   width: 100%;
 }
 
+.title-block {
+  font-weight: 700;
+  border-bottom: 3px solid blue;
+  margin: 20px auto;
+  padding-bottom: 16px;
+}
+
 .welcome-block {
   display: flex;
   flex-direction: column;
@@ -432,12 +459,6 @@ body {
   width: 80%;
   margin: auto;
   margin-top: 98px;
-}
-.welcome-block__title {
-  font-weight: 700;
-  border-bottom: 3px solid blue;
-  margin: 20px auto;
-  padding-bottom: 16px;
 }
 .welcome-block__img {
   margin: 55px 0 98px 0;
@@ -452,10 +473,13 @@ body {
   margin-top: 98px;
   text-align: -webkit-center;
 }
+
 .types-of-yachts__title {
   font-size: 50px;
   margin-bottom: 49px;
+  width: 305px;
 }
+
 .types-of-yachts__card {
   width: 80%;
   margin-bottom: 59px;
@@ -504,6 +528,12 @@ body {
   padding: 0 10px;
 }
 
+.gallery__title {
+  text-align: center;
+  margin-bottom: 20px;
+  width: 150px;
+}
+
 .gallery__btn {
   margin-bottom: 20px;
   opacity: 0.5;
@@ -547,8 +577,106 @@ body {
   height: 100px;
 }
 
+@media (max-width: 363px) {
+  .gallery {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 480px) {
+  .gallery {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .gallery__main-photo {
+    background: url("../img/gallery_photo_1.jpg") no-repeat;
+    background-size: contain;
+    width: 421px;
+    height: 375px;
+    margin: auto;
+  }
+  .btn--photo2:focus ~ .gallery__main-photo {
+    background: url("../img/gallery_photo_2.jpg") no-repeat;
+    background-size: contain;
+    width: 421px;
+    height: 375px;
+    margin: auto;
+  }
+  .btn--photo3:focus ~ .gallery__main-photo {
+    background: url("../img/gallery_photo_3.jpg") no-repeat;
+    background-size: contain;
+    width: 421px;
+    height: 375px;
+  }
+  .btn--photo4:focus ~ .gallery__main-photo {
+    background: url("../img/gallery_photo_4.jpg") no-repeat;
+    background-size: contain;
+    width: 421px;
+    height: 375px;
+  }
+}
+@media (min-width: 576px) {
+  .gallery__photo {
+    width: 121px;
+    height: 121px;
+  }
+  .gallery__main-photo {
+    background: url("../img/gallery_photo_1.jpg") no-repeat;
+    background-size: contain;
+    width: 530px;
+    height: 380px;
+    margin: auto;
+  }
+  .btn--photo2:focus ~ .gallery__main-photo {
+    background: url("../img/gallery_photo_2.jpg") no-repeat;
+    background-size: contain;
+    width: 530px;
+    height: 472px;
+    margin: auto;
+  }
+  .btn--photo3:focus ~ .gallery__main-photo {
+    background: url("../img/gallery_photo_3.jpg") no-repeat;
+    background-size: contain;
+    width: 530px;
+    height: 472px;
+  }
+  .btn--photo4:focus ~ .gallery__main-photo {
+    background: url("../img/gallery_photo_4.jpg") no-repeat;
+    background-size: contain;
+    width: 530px;
+    height: 472px;
+  }
+  .gallery {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 768px) {
+  .gallery__photo {
+    width: 173px;
+    height: 173px;
+  }
+  .gallery__main-photo {
+    background: url("../img/gallery_photo_1.jpg") no-repeat;
+    background-size: contain;
+    width: 746px;
+    height: 581px;
+    margin: auto;
+  }
+  .gallery {
+    text-align: justify;
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 772px) {
+  .gallery {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}
 .news__title {
   text-align: center;
+  width: 162px;
 }
 
 .news__img {
@@ -604,6 +732,10 @@ body {
   margin-top: 20px;
   text-align: center;
 }
+.description__text--comment-winner {
+  font-size: 35px;
+  margin-top: 20px;
+}
 
 .description__title {
   font-size: 25px;
@@ -613,11 +745,6 @@ body {
 
 .description__teams-list {
   list-style-type: disc;
-}
-
-.description__text--comment-winner {
-  font-size: 35px;
-  margin-top: 20px;
 }
 
 .description__author {
@@ -634,21 +761,53 @@ body {
   margin-left: 12px;
 }
 
+.wrap-contacts {
+  position: relative;
+  overflow: hidden;
+}
+
 .contacts {
   position: relative;
-  top: 416px;
+  bottom: 139px;
   z-index: 1;
 }
 
 .contacts__title {
   text-align: start;
   font-size: 20px;
+  font-weight: 700;
+  border-bottom: 3px solid blue;
+  padding-bottom: 16px;
+  width: 94px;
 }
 
 .contacts__info {
   font-size: 17px;
 }
+.contacts__info--weight {
+  font-weight: 700;
+}
 
+.map {
+  width: 100%;
+  height: 351px;
+}
+
+@media (min-width: 768px) {
+  .contacts {
+    position: static;
+  }
+  .map {
+    width: 80%;
+    height: 351px;
+  }
+  .wrap-contacts {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+}
 .social-networks__text {
   margin-top: 20px;
   text-align: center;
@@ -678,6 +837,12 @@ body {
   background-image: url("../img/instagram.svg");
 }
 
+@media (min-width: 768px) {
+  .social-networks__link {
+    width: 98px;
+    height: 98px;
+  }
+}
 .footer-menu {
   margin: 5% 0;
 }
@@ -700,4 +865,18 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 0 3%;
+}
+
+@media (min-width: 768px) {
+  .footer-menu {
+    margin: 5% 0;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .footer-menu__section:hover .section__list {
+    display: block;
+    padding-left: 8px;
+    max-width: min-content;
+    background-color: blue;
+  }
 }
