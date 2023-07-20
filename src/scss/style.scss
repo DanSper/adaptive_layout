@@ -148,6 +148,7 @@ body {
 
 .gallery {
 	text-align: justify;
+	padding: 0 10px;
 }
 
 .gallery__btn {
@@ -194,92 +195,95 @@ body {
 }
 
 
+.news__title {
+	text-align: center;
+}
 
-
-.img-of-news {
+.news__img {
 	width: 100%;
 }
 
-.figcaption {
+.news__figcaption {
 	font-size: 20px;
 	color: #8693A4;
 }
 
-.container-description-of-news {
-	margin-bottom: 10%;
-}
-
-.flex-for-two-el {
-	display: flex;
-}
-
-.more {
-	margin-left: 25px;
-}
-
-.more__btn {
-	padding: 10px;
-	font-size: 20px;
-}
-
-
-.more__btn:active {
-	background: red;
-}
-
-.block {
-	margin-top: 25px;
-}
-
-.block:hover .description-of-news {
-	display: block;
-}
-
-.description-of-news {
-	display: none;
-	width: 80%;
-	margin-left: 30px;
-}
-
-.description-of-news__paragraph {
-	margin-top: 20px;
-}
-
-
-.subtitle-of-news {
+.news__subtitle {
 	font-size: 30px;
 	font-weight: 700;
-	padding-left: 3%;
+	text-align: center;
 }
 
-.title-list-of-teams {
+.news__description {
+	width: 80%;
+	margin-left: 30px;
+	max-height: 200px;
+	overflow: hidden;
+}
+
+.read-more__checker {
+	opacity: 0;
+}
+
+.read-more__checker:checked ~ .news__description {
+	max-height: none;
+}
+
+.read-more__checker ~ .read-more-btn::before {
+	content: "Подробнее ⇓";
+}
+
+.read-more__checker:checked ~ .read-more-btn::before {
+	content: "Скрыть ⇑";
+}
+
+.read-more-btn {
+	cursor: pointer;
+	display: inline-block;
+	padding: 10px;
+	color: #777;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	margin-left: 123px;
+	margin-top: 10px;
+}
+
+.description__text {
+	margin-top: 20px;
+	text-align: center;	
+}
+
+.description__title {
 	font-size: 25px;
 	font-weight: 700;
 	margin-top: 20px;
 }
 
-.list-of-teams {
+.description__teams-list {
 	list-style-type: disc;
 }
 
-.comment-of-winner {
+.description__text--comment-winner {
 	font-size: 35px;
 	margin-top: 20px;
 }
 
-.container-for-photo-of-author {
+.description__author {
 	display: flex;
 	align-items: center;
 	margin-top: 30px;
 }
 
-.photo-of-author {
+.author__photo {
 	width: 80px;
 }
 
-.name-of-author-and-date-of-comment {
-	line-height: 0;
+.author__information {
+	margin-left: 12px;
 }
+
+
+
 
 .contacts {
 	position: relative;    
@@ -296,25 +300,21 @@ body {
 	font-size: 17px;
 }
 
-.social-networks {
-	margin: 20px 0;
+
+
+
+.social-networks__text {
+	margin-top: 20px;
+	text-align: center;
 }
 
 .social-networks__logo {
-	width: 90px;
-	margin: 10px;
-}
-
-.text-social-networks {
-	margin: 20px 0 0 20px;
-}
-
-.social-networks {
+	margin: 20px 0;
 	display: flex;
+	justify-content: space-evenly;
 }
 
-.social-networks__link{
-	margin-left: 20px;
+.social-networks__link{	
 	border: 1px solid green;
 	border-radius: 50%;
 	display: block;
@@ -347,7 +347,7 @@ body {
 }
 
 
-.footer-menu__container-for-section:hover .section__list {
+.footer-menu__section:hover .section__list {
 	display: block;
 }
 
