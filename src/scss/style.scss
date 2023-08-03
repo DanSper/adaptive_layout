@@ -22,6 +22,7 @@ a {
  color: inherit;
 }
 
+
 .header {
 	display: flex;
 	justify-content: space-between;
@@ -29,34 +30,16 @@ a {
 }
 
 .header__logo {
-	width: 79px;
+	width: 50px;
 }
 
-@media (min-width: 768px) {
-	.header__logo {
-		width: 119px;
-	}	
-}
 
 .header__profile {
-	width: 100px;
-}
-
-@media (min-width: 768px) {
-	.header__profile {
-		width: 129px;
-		margin-left: 325px;
-	}
+	width: 50px;
 }
 
 .menu__icon {
-	 width: 100px;
-}
-
-@media (min-width: 768px) {
-	.menu__icon {
-		 width: 130px;
-	}
+	 width: 50px;
 }
 
 .menu__list {
@@ -80,7 +63,7 @@ a {
 .title {
 	font-style: italic;
 	font-weight: 400;
-	font-size: 44px;
+	font-size: 35px;
 	line-height: 60px;
 	color: #163152;
 	text-transform: uppercase;
@@ -96,6 +79,7 @@ a {
 	border-bottom: 3px solid blue;
 	margin: 20px auto;
 	padding-bottom: 16px;
+	font-size: 35px;
 }
 
 .welcome-block {
@@ -106,7 +90,7 @@ a {
 	margin: auto;
 	margin-top: 98px;
 	&__title {		
-    	
+    font-size: 35px;	
 	}
 	&__img {
 		margin: 55px 0 98px 0;
@@ -114,8 +98,12 @@ a {
 	}
 	&__date {
 		text-transform: uppercase;
-		font-size: 24px;
+		font-size: 18px;
 	}
+}
+
+.welcome-block__text {
+	font-size: 25px;
 }
 
 
@@ -125,9 +113,8 @@ a {
 }
 
 .types-of-yachts__title {
-	font-size: 50px;
 	margin-bottom: 49px;
-	width: 305px;
+	width: 215px;
 }
 
 .types-of-yachts__card {
@@ -140,7 +127,7 @@ a {
 }
 
 .info__name {
-	font-size: 33px;
+	font-size: 25px;
 	font-weight: 700;
 	margin: 20px 0;
 }
@@ -154,31 +141,37 @@ a {
 	display: block;
 }
 
+.info__description {
+	font-size: 25px;
+}
+
 .info__options-list {
 	list-style-type: disc;
 	padding-left: 27px;
+	font-size: 25px;
 }
 
-.info__price-wrap {
+.info-price {
 	display: flex;
 	justify-content: space-between;
 	font-weight: 700;
 }
 
-.info__price-text {
-	font-size: 35px;
+.info-price__item {
+	font-size: 25px;
 }
 
-.info__price-number {
-	font-size: 35px;
-}
 
 
 
 
 .gallery {
-	text-align: justify;
 	padding: 0 10px;
+	display: grid;
+	grid-template-columns: 23% 23% 23% 23%;
+	gap: 10px;
+	justify-items: center;
+	justify-content: center;
 }
 
 .gallery__title {
@@ -188,7 +181,6 @@ a {
 }
 
 .gallery__btn {
-	margin-bottom: 20px;
 	opacity: 0.5;
 	&:focus {
 		opacity: 1;
@@ -224,123 +216,12 @@ a {
 	background-size: contain;
 	width: 345px;
 	height: 332px;
-	margin: auto;
+	grid-column: 1/5;
 }
 
 .gallery__photo {
-	width: 100px;
-	height: 100px;	
-}
-
-@media (max-width: 363px) {
-	.gallery {
-		text-align: center;
-		margin-bottom: 40px;
-	}
-}
-
-@media (min-width: 480px) {
-	.gallery {
-		text-align: center;
-		margin-bottom: 40px;
-	}
-	
-	.gallery__main-photo {
-		background: url("../img/gallery_photo_1.jpg") no-repeat;
-		background-size: contain;
-		width: 421px;
-		height: 375px;
-		margin: auto;
-	}
-	
-	.btn--photo2:focus ~ .gallery__main-photo  { 
-		background: url("../img/gallery_photo_2.jpg") no-repeat;
-		background-size: contain;
-		width: 421px;
-		height: 375px;
-		margin: auto;
-	}
-
-	.btn--photo3:focus ~ .gallery__main-photo  { 
-		background: url("../img/gallery_photo_3.jpg") no-repeat;
-		background-size: contain;
-		width: 421px;
-		height: 375px;
-	}
-
-	.btn--photo4:focus ~ .gallery__main-photo  { 
-		background: url("../img/gallery_photo_4.jpg") no-repeat;
-		background-size: contain;
-		width: 421px;
-		height: 375px;
-	}
-}
-
-@media (min-width: 576px) {
-	.gallery__photo {
-		width: 121px;
-		height: 121px;	
-	}
-	
-		.gallery__main-photo {
-		background: url("../img/gallery_photo_1.jpg") no-repeat;
-		background-size: contain;
-		width: 530px;
-		height: 380px;
-		margin: auto;
-	}
-	
-	.btn--photo2:focus ~ .gallery__main-photo  { 
-		background: url("../img/gallery_photo_2.jpg") no-repeat;
-		background-size: contain;
-		width: 530px;
-		height: 472px;
-		margin: auto;
-	}
-
-	.btn--photo3:focus ~ .gallery__main-photo  { 
-		background: url("../img/gallery_photo_3.jpg") no-repeat;
-		background-size: contain;
-		width: 530px;
-		height: 472px;
-	}
-
-	.btn--photo4:focus ~ .gallery__main-photo  { 
-		background: url("../img/gallery_photo_4.jpg") no-repeat;
-		background-size: contain;
-		width: 530px;
-		height: 472px;
-	}
-	
-	.gallery {
-		text-align: center;
-		margin-bottom: 40px;
-	}
-}
-
-@media (min-width: 768px) {
-	.gallery__photo {
-		width: 173px;
-		height: 173px;	
-	}
-		.gallery__main-photo {
-		background: url("../img/gallery_photo_1.jpg") no-repeat;
-		background-size: contain;
-		width: 746px;
-		height: 581px;
-		margin: auto;
-	}
-	.gallery {
-		text-align: justify;
-		margin-bottom: 40px;
-	}
-}
-
-@media (min-width: 772px) {
-	.gallery {
-		text-align: center;
-		margin-bottom: 40px;
-	}
+	width: 80px;
+	height: 80px;	
 }
 
 
@@ -356,7 +237,7 @@ a {
 }
 
 .news__figcaption {
-	font-size: 20px;
+	font-size: 10px;
 	color: #8693A4;
 }
 
@@ -366,9 +247,16 @@ a {
 	text-align: center;
 }
 
+.news__wrap {
+	max-width: 500px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
+
 .news__description {
 	width: 80%;
-	margin-left: 30px;
+	margin: auto;
 	max-height: 200px;
 	overflow: hidden;
 }
@@ -396,15 +284,15 @@ a {
 	color: #777;
 	border: 1px solid #ddd;
 	border-radius: 4px;
-	margin-left: 123px;
-	margin-top: 10px;
+	margin: 0 auto;
 }
 
 .description__text {
 	margin-top: 20px;
 	text-align: center;
+	font-size: 25px;
 	&--comment-winner {
-		font-size: 35px;
+		font-size: 30px;
 		margin-top: 20px;
 	}
 }
@@ -417,6 +305,7 @@ a {
 
 .description__teams-list {
 	list-style-type: disc;
+	font-size: 25px;
 }
 
 .description__author {
@@ -431,17 +320,20 @@ a {
 
 .author__information {
 	margin-left: 12px;
+	font-size: 20px;
 }
 
 
 .wrap-contacts {
 	position:relative;
 	overflow:hidden;
+	margin-top: 20px;
 }
 
 .contacts {
 	position: relative;    
-	bottom: 139px;
+	bottom: 160px;
+	left: 10px;
 	z-index: 1;
 }
 
@@ -466,39 +358,23 @@ a {
 	height: 351px;
 }
 
-@media (min-width: 768px) {
-	.contacts {
-		position: static;    
-	}
 
-	.map {
-		width: 80%;
-		height: 351px;
-	}
-	
-	.wrap-contacts {
-		position:relative;
-		overflow:hidden;
-		display: flex;
-    align-items: center;
-	}
-}
 
 
 .social-networks__text {
 	margin-top: 20px;
 	text-align: center;
+	font-size: 20px;
+	font-weight: 700;
 }
 
-.social-networks__logo {
+.social-networks__container {
 	margin: 20px 0;
 	display: flex;
 	justify-content: space-evenly;
 }
 
-.social-networks__link{	
-	border: 1px solid green;
-	border-radius: 50%;
+.social-networks__link {	
 	display: block;
 	width: 70px;
 	height: 70px;
@@ -514,27 +390,23 @@ a {
 	}
 }
 
-@media (min-width: 768px) {
-	.social-networks__link{
-		width: 98px;
-		height: 98px;
-	}
-}
+
 
 .footer-menu {
 	margin: 5% 0;
 }
 
 .section__title {
-	font-size: 35px;
-	margin-left: 3%;
+	font-size: 25px;
+	margin-left: 20px;
+	font-weight: 700;
 }
 
 .section__list {
 	display: none;
 	margin-top: 5px;
+	font-size: 20px;
 }
-
 
 .footer-menu__section:hover .section__list {
 	display: block;
@@ -542,25 +414,93 @@ a {
 
 .footer-information {
 	display: flex;
-	justify-content: space-between;
-	margin: 0 3%;
+	align-items: flex-end;
+	justify-content: space-around;
 }
 
+.footer-information__logo {
+	width: 70px;
+}
+
+.footer-information__text {
+	font-size: 15px;
+}
+
+
+
 @media (min-width: 768px) {
+	.header__logo {
+		width: 119px;
+	}
+	
+	.header__profile {
+		width: 129px;
+		margin-left: 325px;
+	}
+	
+	.menu__icon {
+		 width: 130px;
+	}
+	
+	.gallery__photo {
+		width: 173px;
+		height: 173px;	
+	}
+	
+	.gallery__main-photo {
+		background: url("../img/gallery_photo_1.jpg") no-repeat;
+		background-size: contain;
+		width: 746px;
+		height: 581px;
+	}
+			
+	.contacts {
+		position: static;    
+	}
+		
+	.wrap-contacts {
+		position:relative;
+		overflow:hidden;
+		display: grid;
+    grid-template-columns: 65% 35%;
+    align-items: center;
+    padding: 0 10px;
+	}
+	
+	.map {
+		width: 453px;
+    height: 290px;
+	}
+	
+	.social-networks {
+		grid-column: 1/3;
+	}
+	
+	.social-networks__link{
+		width: 80px;
+		height: 80px;
+		&--size {
+			background-size: 50px;
+		}
+	}
+	
 	.footer-menu {
 		margin: 5% 0;
 		display: flex;
     justify-content: space-evenly;
+		min-height: 260px;
+	}
+	
+	.footer-menu__section {
+		min-width: 151px;
 	}
 	
 	.footer-menu__section:hover .section__list {
-		display: block;
-		padding-left: 8px;
+		display: block;	
 		max-width: min-content;
-		background-color: blue;
-	}	
+	}
+
+	.section__list {
+		padding: 0;
+	}
 }
-
-
-
-
