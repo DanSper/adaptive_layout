@@ -524,11 +524,11 @@ a {
   justify-content: center;
 }
 
+
 .gallery__title {
   text-align: center;
   margin-bottom: 20px;
   width: 150px;
-}
 
 .gallery__btn {
   opacity: 0.5;
@@ -637,6 +637,7 @@ a {
   text-align: center;
   font-size: 25px;
 }
+  
 .description__text--comment-winner {
   font-size: 30px;
   margin-top: 20px;
@@ -652,6 +653,7 @@ a {
   list-style-type: disc;
   font-size: 25px;
 }
+
 
 .description__author {
   display: flex;
@@ -693,6 +695,7 @@ a {
 .contacts__info {
   font-size: 17px;
 }
+
 .contacts__info--weight {
   font-weight: 700;
 }
