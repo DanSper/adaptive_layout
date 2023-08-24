@@ -1,5 +1,6 @@
 @import "normalize.scss";
 @import "scaffolding.scss";
+@import  "variables.scss";
 
 
 
@@ -38,6 +39,14 @@ a {
 	width: 50px;
 }
 
+.header__profile:hover {
+	opacity: 0.5;
+}
+
+.header__profile:active {
+	opacity: 0.2;
+}
+
 .menu__icon {
 	 width: 50px;
 }
@@ -47,12 +56,12 @@ a {
 	position: fixed;
 	right: 1%;
 	z-index: 1;
-	background: #3d9dff;
+	background: $blue;
 	font-size: 60px;
 	padding: 20px;
 }
 
-.menu__item--white {
+.menu__item--color {
 	color: white;
 }
 
@@ -65,7 +74,7 @@ a {
 	font-weight: 400;
 	font-size: 35px;
 	line-height: 60px;
-	color: #163152;
+	color: $mainBlue;
 	text-transform: uppercase;
 	margin: 30px 0 30px 60px;
 }
@@ -76,7 +85,7 @@ a {
 
 .title-block {
 	font-weight: 700;
-	border-bottom: 3px solid blue;
+	border-bottom: 3px solid $lightBlue;
 	margin: 20px auto;
 	padding-bottom: 16px;
 	font-size: 35px;
@@ -90,7 +99,8 @@ a {
 	margin: auto;
 	margin-top: 98px;
 	&__title {		
-    font-size: 35px;	
+    font-size: 35px;
+		max-width: 405px;
 	}
 	&__img {
 		margin: 55px 0 98px 0;
@@ -108,8 +118,7 @@ a {
 
 
 .types-of-yachts {
-	margin-top: 98px;
-	text-align: -webkit-center;	
+	margin-top: 98px;	
 }
 
 .types-of-yachts__title {
@@ -119,6 +128,7 @@ a {
 
 .types-of-yachts__card {
 	width: 80%;
+	margin: auto;
 	margin-bottom: 59px;
 }
 
@@ -130,6 +140,7 @@ a {
 	font-size: 25px;
 	font-weight: 700;
 	margin: 20px 0;
+	text-align: center;
 }
 
 .info__description-wrap {
@@ -168,7 +179,7 @@ a {
 .gallery {
 	padding: 0 10px;
 	display: grid;
-	grid-template-columns: 23% 23% 23% 23%;
+	grid-template-columns: 77px 77px 77px 77px;
 	gap: 10px;
 	justify-items: center;
 	justify-content: center;
@@ -240,7 +251,7 @@ a {
 
 .news__figcaption {
 	font-size: 10px;
-	color: #8693A4;
+	color: $grey
 }
 
 .news__subtitle {
@@ -283,7 +294,7 @@ a {
 	cursor: pointer;
 	display: inline-block;
 	padding: 10px;
-	color: #777;
+	color: $darkGrey;
 	border: 1px solid #ddd;
 	border-radius: 4px;
 	margin: 0 auto;
@@ -307,7 +318,6 @@ a {
 
 .description__teams-list {
 	list-style-type: disc;
-	font-size: 25px;
 }
 
 .description__author {
@@ -315,6 +325,22 @@ a {
 	align-items: center;
 	margin-top: 30px;
 }
+
+
+.news__btn-share { 
+	background: url(../img/share-icon.svg) no-repeat;
+	width: 70px;
+	height: 70px;
+	margin-left: 107px;
+}
+
+.news__btn-share:hover {
+	opacity: 0.5;
+}
+
+.news__btn-share:active {
+	opacity: 0.3;
+}  
 
 .author__photo {
 	width: 80px;
@@ -344,17 +370,17 @@ a {
 
 .contacts__title {
 	text-align: start;
-	font-size: 20px;
 	font-weight: 700;
-	border-bottom: 3px solid blue;
 	padding-bottom: 16px;
-	width: 94px;
+	width: 163px;
+	margin: 0;
 }
 
 .contacts__info {
-	font-size: 17px;
+	font-size: 16px;
 	&--weight {
 		font-weight: 700;
+		margin-right: 10px;
 	}
 }
 
@@ -385,7 +411,7 @@ a {
 	height: 70px;
 	background: url('../img/facebook.svg') no-repeat center center;
 	&:hover{
-		border-color: blue;
+		opacity: 0.5;
 	}
 	&--twit{
 		background-image:  url('../img/twitter.svg');
@@ -434,7 +460,7 @@ a {
 
 
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
 	.header__logo {
 		width: 119px;
 	}
@@ -446,6 +472,10 @@ a {
 	
 	.menu__icon {
 		 width: 130px;
+	}
+	
+	.gallery {
+		grid-template-columns: 180px 180px 180px 180px;
 	}
 	
 	.gallery__photo {
@@ -491,7 +521,6 @@ a {
 	}
 	
 	.footer-menu {
-		margin: 5% 0;
 		display: flex;
     justify-content: space-evenly;
 		min-height: 260px;
@@ -509,4 +538,455 @@ a {
 	.section__list {
 		padding: 0;
 	}
+}
+
+@media (min-width: $desktop-width) {
+	.container-page {
+		max-width: 1170px;
+		margin: auto;
+	}
+	
+	.header {
+		padding: 10px 0;
+		align-items: center;
+	}
+	
+	.header a+a {
+		order: 3;
+	}	
+	
+	.header__logo {
+		width: 64px;
+		height: 68px;
+	}
+	
+	.header__profile {
+		width: 36px;
+		height: 36px;
+		margin-left: 0;
+	}
+	
+	.menu:hover .menu__list {
+		display: inline;
+	}
+	
+	.menu__icon {
+		display: none;
+	}
+	
+	.menu__list {
+		display: flex;
+		position: static;
+		background: white;
+		font-size: 14px;
+		line-height: 18px;
+		width: 520px;
+    justify-content: space-between;
+		margin-left: 533px;
+	}
+	
+	.menu__item:hover {
+		opacity: 0.5;
+	}
+	
+	.menu__item:active {
+		opacity: 0.3;
+	}
+	
+	.menu__item--color {
+		color: $mainBlue;
+	}
+	
+	.title {
+		font-size: 44px;
+	}
+	
+	.welcome-block {
+		flex-direction: row;
+		justify-content: space-between;
+		width: 1030px;
+		text-align: start;
+		&--direction {
+			flex-direction: row-reverse;
+		}
+	}
+	
+	.welcome-block__information {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		&--position {
+			align-items: flex-end;
+		}
+	}
+	
+	.welcome-block__date {
+		font-size: 14px;
+		line-height: 18px;
+	}
+	
+	.welcome-block__title {
+		font-size: 24px;
+		line-height: 34px;
+		max-width: max-content;
+		margin: 0;
+	}
+	
+	.title-block {
+		font-size: 24px;
+    line-height: 34px;
+	}
+	
+	.welcome-block__text {
+		font-size: 16px;
+		line-height: 24px;
+		padding-bottom: 30px;
+		width: 400px;
+		&--position {
+			text-align: end;
+		}
+	}
+	
+	.welcome-block__img {
+		margin: 0;
+		width: 600px;
+	}
+	
+	.types-of-yachts__container {
+		display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;;
+	}
+	
+	.types-of-yachts__title {
+    width: 148px;
+		margin: 119px 0 50px 0;
+	}
+	
+	.types-of-yachts__card {
+    width: 370px;
+    height: 487px;
+		margin: 0 0 30px 0;
+		padding: 30px;
+		box-shadow: 0 4px 30px 0 $lightGrey;
+		&--first-bottom-el {
+			margin-left: 200px;
+		}
+		&--second-bottom-el {
+			margin-right: 200px;
+		}
+	}
+	
+	.info__description-wrap {
+		display: block;
+	}
+	
+	.card__info {
+		pointer-events: none;
+	}
+	
+	.card__img {
+    width: 310px;
+    height: 141px;
+	}
+	
+	.info__name {
+    font-size: 20px;
+    line-height: 23px;
+	}
+	
+	.info__description {
+    font-size: 14px;
+    line-height: 24px;
+	}
+	
+	.info__options-list {
+    font-size: 14px;
+    line-height: 19px;
+	}
+	
+	.info-price__item {
+    font-size: 18px;
+    line-height: 21px;
+	}
+	
+	.gallery {
+    padding: 0;
+		grid-template-columns: auto auto auto auto;
+	}
+	
+	.gallery__title {
+    margin-bottom: 60px;
+    margin-top: 130px;
+    width: 91px;
+	}
+	
+	.gallery__photo {
+    width: 174px;
+    height: 160px;
+	}
+	
+	.gallery__main-photo {
+		width: 970px;
+    height: 690px;
+		grid-column: 2/5;
+    grid-row: 1/5;
+	}
+	
+	.gallery__btn {
+    opacity: .5;
+    grid-column: 6;
+	}
+	
+	.btn--photo2:focus~.gallery__main-photo {
+		width: 970px;
+    height: 690px;
+	}
+	
+	.btn--photo3:focus~.gallery__main-photo {
+		width: 970px;
+    height: 690px;
+	}
+	
+	.btn--photo4:focus~.gallery__main-photo {
+		width: 970px;
+    height: 690px;
+	}
+	
+	.btn--photo5:focus~.gallery__main-photo {
+		width: 970px;
+    height: 690px;
+	}
+	
+	.news {
+		max-width: 770px;
+		margin: 133px auto;
+	}
+	
+	.news__title {
+    width: 97px;
+    margin-bottom: 40px;
+	}
+	
+	.news__img {
+    height: 301px;
+	}
+	
+	.news figure {
+		margin: 0;
+	}
+	
+	.news__figcaption {
+    font-size: 16px;
+		margin-top: 15px;
+	}
+	
+	.news__subtitle {
+    font-size: 22px;
+    line-height: 30px;
+    text-align: start;
+		margin-top: 30px;
+	}
+	
+	.news__wrap {
+    max-width: none;
+	}
+	
+	.read-more__checker {
+		display: none;
+	}
+	
+	.read-more-btn {
+    display: none;
+	}
+	
+	.news__description {
+		max-height: none;
+		width: auto;
+	}
+
+	.description__text {
+    text-align: start;
+    font-size: 18px;
+    line-height: 26px;
+	}
+	
+	.description__title {
+    font-size: 20px;
+    line-height: 26px;
+	}
+	
+	.description__teams-list {
+    padding-left: 20px;
+		margin-top: 13px;
+	}
+	
+	.description__list-item {
+		font-size: 18px;
+		line-height: 26px;
+	}
+	
+	.description__list-item::marker {
+		font-size: 21px;
+	}
+	
+	.description__text--comment-winner {
+    border-left: 2px solid $lightBlue;
+    padding-left: 30px;
+		font-size: 26px;
+    line-height: 36px;
+		margin-bottom: 27px;
+	}
+	
+	.author__photo {
+    width: 60px;
+	}
+	
+	.author__information {
+    font-size: 16px;
+    line-height: 19px;
+		&--name {
+			display: inline-block;
+			font-weight: 700;
+			margin-bottom: 10px;
+		}
+	}
+	
+	.map {
+    width: 670px;
+    height: 351px;
+	}
+	
+	.wrap-contacts {
+		grid-template-columns: 75% 25%;
+		grid-template-rows: 65% 35%;
+		padding: 0;
+		width: 1010px;
+	}
+	
+	.container-map {
+		grid-row: 1/3;
+	}
+	
+	.contacts {
+		align-self: end;
+	}
+	
+	.contacts__title {
+		margin: 0;
+		margin-bottom: 13px;
+		width: 113px;
+	}
+	
+	.social-networks {
+    grid-column: 2/3;
+		align-self: start;
+    padding-top: 10px;
+	}
+	
+	.social-networks__text {
+		margin: 0;
+    text-align: start;
+    font-size: 16px;
+    line-height: 22px;
+	}
+	
+	.social-networks__container {
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+	}
+	
+	.social-networks__link {
+    width: 51px;
+    height: 60px;
+		&--size {
+			background-size: 40px;
+		}
+	}
+	
+	.footer {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 108px;
+    border-top: 1px solid rgba(22, 49, 82, 0.1);
+	}
+	
+	.footer-menu {
+    justify-content: space-between;
+    min-height: 0;
+    width: 894px;
+	}
+	
+	.footer-menu__section {
+    min-width: 0;
+		height: 165px;
+	}
+	
+	.section__title {
+    font-size: 14px;
+    line-height: 18px;
+		margin: 0;
+		padding-bottom: 10px;
+		text-transform: uppercase;
+	}
+	
+	.section__list {
+    display: block;
+		font-size: 14px;
+    line-height: 16px;
+		margin: 0;
+	}
+	
+	.section__list-item {
+		padding: 7px 0;
+	}
+	
+	.section__list-item:hover {
+		opacity: 0.5;
+		cursor: pointer;
+	}
+	
+	.section__list-item:active {
+		opacity: 0.3;
+	}
+	
+	.section__list-item:last-child {
+		padding-bottom: 0;
+	}
+	
+	.footer-information {
+		flex-direction: column;
+		align-items: normal;
+		order: -1;
+		height: 165px;
+		justify-content: space-between;
+	}
+	
+	.footer-information__logo {
+    width: 100px;
+    height: 106px;
+	}
+	
+	.footer-information__text {
+    font-size: 10px;
+    line-height: 12px;
+		padding-bottom: 5px;
+	}
+	
+	.footer-information__text:last-child {
+		padding-bottom: 0;
+	}
+	
+	.description__author::after {
+		left: 527px;
+	}
+	
+	.news__btn-share {
+    position: relative;
+    left: 511px;
+    top: 20px;
+		margin: 0;
+	}		
 }

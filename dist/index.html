@@ -17,136 +17,141 @@
 					<img src="../img/menu_round_button_icon.svg" class="menu__icon" alt="Кнопка открытия меню">
 					<ul class="menu__list">
 					<!-- какие свойства наследуются, а какие нет в css  -->
-						<li class="menu__item"><a href="#" class="menu__item--white">Наш клуб</a></li> 
-						<li class="menu__item"><a href="#" class="menu__item--white">Регаты</a></li>    
-						<li class="menu__item"><a href="#" class="menu__item--white">Команда</a></li>   
-						<li class="menu__item"><a href="#" class="menu__item--white">Обучение</a></li>
-						<li class="menu__item"><a href="#" class="menu__item--white">Новости</a></li> 
-						<li class="menu__item"><a href="#" class="menu__item--white">Контакты</a></li>				
+						<li class="menu__item"><a href="#" class="menu__item--color">Наш клуб</a></li> 
+						<li class="menu__item"><a href="#" class="menu__item--color">Регаты</a></li>    
+						<li class="menu__item"><a href="#" class="menu__item--color">Команда</a></li>   
+						<li class="menu__item"><a href="#" class="menu__item--color">Обучение</a></li>
+						<li class="menu__item"><a href="#" class="menu__item--color">Новости</a></li> 
+						<li class="menu__item"><a href="#" class="menu__item--color">Контакты</a></li>				
 					</ul>				
 				</nav>
 			</header>		
-			<!-- Везде уменьштьб шрифт и логотипы на мобильной версии -->
-			<!-- В футере уменьшить шрифт на планшетной версии -->
-			<!-- в блоке news отцентровать текст при резине и задать максимальную ширину, чтобы не перенослся текст при измении ширины устройства -->
 			<main>
 				<h1 class="title">вместе под парусом</h1>
 				<img src="../img/main_photo.jpg" class="main-img" alt="">
-				<div class="welcome-block">		
-					<p class="welcome-block__date">20 октября - 19 апреля</p>
-					<h2 class="welcome-block__title title-block">Стань частью команды</h2>
-					<p class="welcome-block__text">Если вы давно хотели попробовать себя в яхтинге –
-					сейчас самое лучшее время! Мы набираем команду
-					будущих шкиперов. За 6 вы станете настоящим 
-					капитаном и уже в следующем сезоне сможете 
-					самостоятельно выйти в море!</p>
-					<img src="../img/photo_2.png" class="welcome-block__img" alt="">		
-					<p class="welcome-block__date">16 июля - 23 июля</p>
-					<h2 class="welcome-block__title title-block">Рожденные в воде</h2>
-					<p class="welcome-block__text">Подарите детям настоящее приключение! День с 
-					морскими пиратами на корабле – это лучшая
-					команда, веселые аниматоры, игры, соревнования, 
-					работа в команде и, конечно, море!</p> 
+				<div class="welcome-block">
+					<div class="welcome-block__information">
+						<p class="welcome-block__date">20 октября - 19 апреля</p>
+						<h2 class="welcome-block__title title-block">Стань частью команды</h2>
+						<p class="welcome-block__text">Если вы давно хотели попробовать себя в яхтинге –
+						сейчас самое лучшее время! Мы набираем команду
+						будущих шкиперов. За 6 вы станете настоящим 
+						капитаном и уже в следующем сезоне сможете 
+						самостоятельно выйти в море!</p>
+					</div>
+					<img src="../img/photo_2.png" class="welcome-block__img" alt="">
+				</div>
+				<div class="welcome-block welcome-block--direction">
+					<div class="welcome-block__information welcome-block__information--position">
+						<p class="welcome-block__date">16 июля - 23 июля</p>
+						<h2 class="welcome-block__title title-block">Рожденные в воде</h2>
+						<p class="welcome-block__text welcome-block__text--position">Подарите детям настоящее приключение! День с 
+						морскими пиратами на корабле – это лучшая
+						команда, веселые аниматоры, игры, соревнования, 
+						работа в команде и, конечно, море!</p>
+					</div>
 					<img src="../img/photo_3.png" class="welcome-block__img" alt="">				
 				</div>
 				<div class="types-of-yachts">
 					<h2 class="types-of-yachts__title title-block">Аренда яхты</h2>
-					<div class="types-of-yachts__card card">
-						<img class="card__img" src="../img/photo_yacht_1.jpg" alt="">
-						<div class="card__info info">
-							<h3 class="info__name">Катер Meridian 401</h3>
-							<div class="info__description-wrap">
-								<p class="info__description">Яхта 401 длиной 12.5 метров и шириной 4.2 <br>метра, вместимостью 11 человек</p>
-								<ul class="info__options-list">
-									<li>2 каюты</li>
-									<li>4 спальных места</li>
-									<li>аудиосистема, кондиционер</li>
-									<li>холодильник, микроволновка</li>
-									<li>душ, туалет</li>
-								</ul>
-								<div class="info__wrap info-price">
-									<p class="info-price__item">Цена:</p> 
-									<p class="info-price__item">14 000 ₽/час</p>
+					<div class="types-of-yachts__container">
+						<div class="types-of-yachts__card card">
+							<img class="card__img" src="../img/photo_yacht_1.jpg" alt="">
+							<div class="card__info info">
+								<h3 class="info__name">Катер Meridian 401</h3>
+								<div class="info__description-wrap">
+									<p class="info__description">Яхта 401 длиной 12.5 метров и шириной 4.2 <br>метра, вместимостью 11 человек</p>
+									<ul class="info__options-list">
+										<li>2 каюты</li>
+										<li>4 спальных места</li>
+										<li>аудиосистема, кондиционер</li>
+										<li>холодильник, микроволновка</li>
+										<li>душ, туалет</li>
+									</ul>
+									<div class="info__wrap info-price">
+										<p class="info-price__item">Цена:</p> 
+										<p class="info-price__item">14 000 ₽/час</p>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="types-of-yachts__card card">
-						<img class="card__img" src="../img/photo_yacht_2.jpg" alt="">
-						<div class="card__info info">
-							<h3 class="info__name">Катер 60 Manhattan</h3>
-							<div class="info__description-wrap">
-								<p class="info__description">Двухпалубное судно VIP уровня длиной 20 <br>метров, вместимостью 10 человек</p>
-								<ul class="info__options-list">
-									<li>6 кают</li>
-									<li>носовая часть с огромной подушкой</li>
-									<li>просторный флайбридж</li>
-									<li>оборудованная кухня</li>
-									<li>джакузи</li>
-								</ul>
-								<div class="info__wrap info-price">
-									<p class="info-price__item">Цена:</p> 
-									<p class="info-price__item">25 000 ₽/час</p>
+						<div class="types-of-yachts__card card">
+							<img class="card__img" src="../img/photo_yacht_2.jpg" alt="">
+							<div class="card__info info">
+								<h3 class="info__name">Катер 60 Manhattan</h3>
+								<div class="info__description-wrap">
+									<p class="info__description">Двухпалубное судно VIP уровня длиной 20 <br>метров, вместимостью 10 человек</p>
+									<ul class="info__options-list">
+										<li>6 кают</li>
+										<li>носовая часть с огромной подушкой</li>
+										<li>просторный флайбридж</li>
+										<li>оборудованная кухня</li>
+										<li>джакузи</li>
+									</ul>
+									<div class="info__wrap info-price">
+										<p class="info-price__item">Цена:</p> 
+										<p class="info-price__item">25 000 ₽/час</p>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="types-of-yachts__card card">
-						<img class="card__img" src="../img/photo_yacht_3.jpg" alt="">
-						<div class="card__info info">
-							<h3 class="info__name">Катер Starfisher 34</h3>
-							<div class="info__description-wrap">
-								<p class="info__description">Моторная яхта длиной 11 метров <br>и вместимостью до 8 человек</p>
-								<ul class="info__options-list">
-									<li>4 каюты</li>
-									<li>6 спальных места</li>
-									<li>аудиосистема, кондиционер</li>
-									<li>холодильник, микроволновка</li>
-									<li>душ, туалет</li>
-								</ul>
-								<div class="info__wrap info-price">
-									<p class="info-price__item">Цена:</p>
-									<p class="info-price__item">18 000 ₽/час</p>
+						<div class="types-of-yachts__card card">
+							<img class="card__img" src="../img/photo_yacht_3.jpg" alt="">
+							<div class="card__info info">
+								<h3 class="info__name">Катер Starfisher 34</h3>
+								<div class="info__description-wrap">
+									<p class="info__description">Моторная яхта длиной 11 метров <br>и вместимостью до 8 человек</p>
+									<ul class="info__options-list">
+										<li>4 каюты</li>
+										<li>6 спальных места</li>
+										<li>аудиосистема, кондиционер</li>
+										<li>холодильник, микроволновка</li>
+										<li>душ, туалет</li>
+									</ul>
+									<div class="info__wrap info-price">
+										<p class="info-price__item">Цена:</p>
+										<p class="info-price__item">18 000 ₽/час</p>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="types-of-yachts__card card">
-						<img class="card__img" src="../img/photo_yacht_4.jpg" alt="">
-						<div class="card__info info">
-							<h3 class="info__name">Катер Pacific 7-13</h3>
-							<div class="info__description-wrap">
-								<p class="info__description">Катер Pacific длиной 12 метров и шириной 4.6 <br>метра, вместимостью 8 человек</p>
-								<ul class="info__options-list">
-									<li>1 каюта</li>
-									<li>2 спальных места</li>
-									<li>аудиосистема, кондиционер</li>
-									<li>холодильник, микроволновка</li>
-									<li>туалет</li>
-								</ul>
-								<div class="info__wrap info-price">
-									<p class="info-price__item">Цена:</p>
-									<p class="info-price__item">11 000 ₽/час</p>
+						<div class="types-of-yachts__card card types-of-yachts__card--first-bottom-el">
+							<img class="card__img" src="../img/photo_yacht_4.jpg" alt="">
+							<div class="card__info info">
+								<h3 class="info__name">Катер Pacific 7-13</h3>
+								<div class="info__description-wrap">
+									<p class="info__description">Катер Pacific длиной 12 метров и шириной 4.6 <br>метра, вместимостью 8 человек</p>
+									<ul class="info__options-list">
+										<li>1 каюта</li>
+										<li>2 спальных места</li>
+										<li>аудиосистема, кондиционер</li>
+										<li>холодильник, микроволновка</li>
+										<li>туалет</li>
+									</ul>
+									<div class="info__wrap info-price">
+										<p class="info-price__item">Цена:</p>
+										<p class="info-price__item">11 000 ₽/час</p>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="types-of-yachts__card card">
-						<img class="card__img" src="../img/photo_yacht_5.jpg" alt="">
-						<div class="card__info info">
-							<h3 class="info__name">Катер Atlantic 3000</h3>
-							<div class="info__description-wrap">
-								<p class="info__description">Катер Atlantic длиной 14 метров <br>и вместимостью до 6 человек</p>
-								<ul class="info__options-list">
-									<li>2 каюты</li>
-									<li>4 спальных места</li>
-									<li>просторный флайбридж</li>
-									<li>оборудованная кухня</li>
-									<li>душ, туалет</li>
-								</ul>
-								<div class="info__wrap info-price">
-									<p class="info-price__item">Цена:</p>
-									<p class="info-price__item">15 000 ₽/час</p>
+						<div class="types-of-yachts__card card types-of-yachts__card--second-bottom-el">
+							<img class="card__img" src="../img/photo_yacht_5.jpg" alt="">
+							<div class="card__info info">
+								<h3 class="info__name">Катер Atlantic 3000</h3>
+								<div class="info__description-wrap">
+									<p class="info__description">Катер Atlantic длиной 14 метров <br>и вместимостью до 6 человек</p>
+									<ul class="info__options-list">
+										<li>2 каюты</li>
+										<li>4 спальных места</li>
+										<li>просторный флайбридж</li>
+										<li>оборудованная кухня</li>
+										<li>душ, туалет</li>
+									</ul>
+									<div class="info__wrap info-price">
+										<p class="info-price__item">Цена:</p>
+										<p class="info-price__item">15 000 ₽/час</p>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -163,14 +168,13 @@
 						</div>
 					</div>	
 				</div>
-
 				<div class="news">
 					<h2 class="news__title title-block">Новости</h2>
 					<figure>
 						<img src="../img/photo_news.jpg" class="news__img" alt="">
 						<figcaption class="news__figcaption">Победитель регаты шкипер Иван Кулешов</figcaption>
 					</figure>			
-					<h3 class="news__subtitle">Итоги регаты<br>Sochi Race Week 2020</h3>
+					<h3 class="news__subtitle">Итоги регаты Sochi Race Week 2020</h3>
 					<div class="news__wrap">
 						<input type="checkbox" class="read-more__checker" id="read-more">
 						<div class="news__description description">
@@ -182,13 +186,13 @@
 							7 экипажей, 9 стран участниц, 4 гоночных дня, 3 дивизиона.</p>
 							<h3 class="description__title">Команды-участники:</h3>
 							<ul class="description__teams-list">
-								<li>Восток 35</li>
-								<li>Fortune Sailing</li>
-								<li>Сибирь</li>
-								<li>Левиафан</li>
-								<li>Черный лебедь</li>
-								<li>White Pepper</li>
-								<li>Pearl</li>
+								<li class="description__list-item">Восток 35</li>
+								<li class="description__list-item">Fortune Sailing</li>
+								<li class="description__list-item">Сибирь</li>
+								<li class="description__list-item">Левиафан</li>
+								<li class="description__list-item">Черный лебедь</li>
+								<li class="description__list-item">White Pepper</li>
+								<li class="description__list-item">Pearl</li>
 							</ul>
 							<p class="description__text">Чемпионом регаты Sochi Race Week 2020 стала команда Fortune Sailing, в прошлом году 
 							остановившаяся в одном шаге от победы, а в этом сезоне опередившая ближайшего 
@@ -198,20 +202,22 @@
 							<p class="description__text">Поздравляем победителей и ждем всеx участников снова на осенних регатах!</p>
 							<div class="description__author author">
 								<img src="../img/author.svg" class="author__photo" alt="Фото автора">							
-								<p class="author__information">Артем Колесников 
-								<br>20.06.2021</p>						
+								<p class="author__information"><span class="author__information--name">Артем Колесников</span> 
+								<br>20.06.2021</p>
+								<button class="news__btn-share"></button>
 							</div>
+
 						</div>
 						<label for="read-more" class="read-more-btn"></label>
 					</div>
 				</div>		
 				<div class="wrap-contacts">				
-					<div>				
+					<div class="container-map">				
 						<iframe class="map" src="https://yandex.ru/map-widget/v1/?ll=39.931788%2C43.413012&mode=whatshere&whatshere%5Bpoint%5D=39.944541%2C43.404857&whatshere%5Bzoom%5D=17&z=17"
 						frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
 					</div>
 					<div class="contacts">
-						<h2 class="contacts__title">Контакты</h2>
+						<h2 class="contacts__title title-block">Контакты</h2>
 						<p class="contacts__info"><span class="contacts__info--weight">Адрес:</span> <a href="https://yandex.ru/maps/239/sochi/house/ulitsa_bzugu_3a/Z0AYcQJhTUICQFppfXl3dXxrZw==/?ll=39.751475%2C43.564083&z=16" target="_blank">г. Сочи, ул. Бзугу, 9</a></p>
 						<p class="contacts__info"><span class="contacts__info--weight">Телефон:</span> <a href="tel:8622620563">8 (622) 62-05-63</a></p>
 						<p class="contacts__info"><span class="contacts__info--weight">E-mail:</span> <a href="yachtclub-sochi@mail.ru">yachtclub-sochi@mail.ru</a></p>
@@ -227,46 +233,46 @@
 				</div>
 				
 			</main>
-			<footer>			
+			<footer class="footer">			
 				<nav class="footer-menu">
 					<div class="footer-menu__section section">
 						<h4 class="section__title">Компания</h4>
 						<ul class="section__list">
-							<li>О нас</li>
-							<li>Команда</li>
-							<li>Новости</li>
-							<li>Блог</li>
-							<li>Галерея</li>
+							<li class="section__list-item"><a href="#"> О нас</a></li>
+							<li class="section__list-item"><a href="#"> Команда</a></li>
+							<li class="section__list-item"><a href="#"> Новости</a></li>
+							<li class="section__list-item"><a href="#"> Блог</a></li>
+							<li class="section__list-item"><a href="#"> Галерея</a></li>
 						</ul>
 					</div>
 					<div class="footer-menu__section section">
 						<h4 class="section__title">Яхт-клуб</h4>
 						<ul class="section__list">
-							<li>Правила</li>
-							<li>Стоимость</li>
-							<li>Анкета</li>
-							<li>FAQ</li>
-							<li>Партнеры</li>
+							<li class="section__list-item"><a href="#"> Правила</a></li>
+							<li class="section__list-item"><a href="#"> Стоимость</a></li>
+							<li class="section__list-item"><a href="#"> Анкета</a></li>
+							<li class="section__list-item"><a href="#"> FAQ</a></li>
+							<li class="section__list-item"><a href="#"> Партнеры</a></li>
 						</ul>
 					</div>
 					<div class="footer-menu__section section">
 						<h4 class="section__title">Услуги</h4>
 						<ul class="section__list">
-							<li>Аренда яхты</li>
-							<li>Свадьба на яхте</li>
-							<li>День рождения</li>
-							<li>Бизнес-встречи</li>
-							<li>Прогулки</li>
+							<li class="section__list-item"><a href="#"> Аренда яхты</a></li>
+							<li class="section__list-item"><a href="#"> Свадьба на яхте</a></li>
+							<li class="section__list-item"><a href="#"> День рождения</a></li>
+							<li class="section__list-item"><a href="#"> Бизнес-встречи</a></li>
+							<li class="section__list-item"><a href="#"> Прогулки</a></li>
 						</ul>
 					</div>
 					<div class="footer-menu__section section">
 						<h4 class="section__title">Регаты</h4>
 						<ul class="section__list">
-							<li>Корпоративные регаты</li>
-							<li>Календарь мероприятий</li>
-							<li>Стать участником</li>
-							<li>Результаты регат</li>
-							<li>Обучение</li>
+							<li class="section__list-item"><a href="#"> Корпоративные регаты</a></li>
+							<li class="section__list-item"><a href="#"> Календарь мероприятий</a></li>
+							<li class="section__list-item"><a href="#"> Стать участником</a></li>
+							<li class="section__list-item"><a href="#"> Результаты регат</a></li>
+							<li class="section__list-item"><a href="#"> Обучение</a></li>
 						</ul>				
 					</div>
 				</nav>

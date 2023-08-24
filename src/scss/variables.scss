@@ -1,19 +1,9 @@
-$marg-top-main-block: 175px;
-$widthBlock: 70vw;
-$lightBrown: #B59571;
-$grey: #808080;
-$darkGrey: #5B5B5B;
-$lightGrey: #5b5b5bc2;
-$darkGreen: #006400;
+$blue: #3d9dff;
+$mainBlue: #163152;
+$lightBlue: #00c6bd;
+$grey: #8693A4;
+$darkGrey: #777;
+$lightGrey: #d3d3d3;
 
-@mixin font ($weight, $size) {
-	font-weight: $weight;
-	font-size: $size;
-}
-
-@mixin flex ($display, $direction, $justify-content, $align-items) {
-	display: $display;
-	flex-direction: $direction;
-	justify-content: $justify-content;
-	align-items: $align-items;
-}
+$tablet-width: 768px;
+$desktop-width: 1280px;

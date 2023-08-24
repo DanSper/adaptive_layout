@@ -1,9 +1,11 @@
+@import  "variables.scss";
+
 * {
 	box-sizing: border-box;
 }
 
 * {
-	color: #163152;
+	color: $mainBlue;
 	font-family: Circe;	
 }
 
